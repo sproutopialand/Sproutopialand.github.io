@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="kids learning,nursery learning,lkg learning videos,ukg learning videos,abc songs for kids,phonics for kids,preschool learning,toddler learning videos,kids rhymes,alphabet learning,numbers learning for kids,colors for kids,shapes learning,preschool education,kids educational videos,nursery rhymes,kids youtube learning,sproutopialand kids learning
 ">
     <meta name="description" content="Welcome to SproutopiaLand – Fun Learning for Nursery, LKG & UKG Kids
@@ -11,907 +11,158 @@ SproutopiaLand is a colorful and fun learning world designed especially for Nurs
 
 At SproutopiaLand, we believe learning should be fun, creative, and interactive. Our educational content helps toddlers develop early reading, listening, and speaking skills.
 
-Parents and teachers can use SproutopiaLand videos to support early childhood education and preschool learning.">   
-    <title>Sproutopia Land - Kids Learning Paradise</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
-        }
-
-        :root {
-            --primary: #FF6B8B;
-            --secondary: #4ECDC4;
-            --accent: #FFD166;
-            --green: #06D6A0;
-            --purple: #9D4EDD;
-            --background: #FFF9F2;
-        }
-
-        body {
-            background-color: var(--background);
-            color: #333;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--purple));
-            color: white;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 80px;
-            width: parent;
-            transition: transform 0.3s ease;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 30px;
-            padding: 1px 1px;
-        }
-
-        .logo img:hover {
-            transform: scale(1.05) rotate(-2deg);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            padding: 8px 12px;
-            border-radius: 20px;
-            transition: all 0.3s;
-        }
-
-        nav a:hover, nav a.active {
-            background-color: var(--accent);
-            color: #333;
-            transform: scale(1.05);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23FFD166" opacity="0.3"/></svg>');
-            padding: 40px 0 50px;
-            text-align: center;
-            border-bottom: 8px dotted var(--secondary);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hero-logo {
-            max-width: 90%;
-            width: 480px;
-            height: auto;
-            margin: 0 auto 20px;
-            display: block;
-            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
-            animation: float 5s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 10px auto 30px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .quick-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .link-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .youtube-btn {
-            background-color: #FF0000;
-            color: white;
-        }
-
-        .whatsapp-btn {
-            background-color: #25D366;
-            color: white;
-        }
-
-        .mail-btn {
-            background-color: #EA4335;
-            color: white;
-        }
-
-        .payment-btn {
-            background-color: var(--green);
-            color: white;
-        }
-
-        .link-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        /* Main Sections */
-        section {
-            padding: 50px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.2rem;
-            color: var(--purple);
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 5px;
-            background-color: var(--accent);
-            border-radius: 5px;
-        }
-
-        /* Video Gallery */
-        .video-gallery {
-            background-color: rgba(255, 214, 102, 0.1);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .video-item {
-            background-color: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .video-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .video-thumbnail {
-            height: 180px;
-            background-color: var(--secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: white;
-        }
-
-        .video-info {
-            padding: 15px;
-        }
-
-        .video-info h3 {
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        /* News Section */
-        .news-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .news-item {
-            padding: 20px;
-            border-bottom: 2px dashed var(--secondary);
-            display: flex;
-            gap: 15px;
-        }
-
-        .news-item:last-child {
-            border-bottom: none;
-        }
-
-        .news-date {
-            background-color: var(--purple);
-            color: white;
-            width: 70px;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .news-date .day {
-            font-size: 1.8rem;
-            font-weight: bold;
-            line-height: 1;
-        }
-
-        .news-content h3 {
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-
-        /* Image Gallery */
-        .image-gallery {
-            background-color: rgba(78, 205, 196, 0.1);
-            border-radius: 20px;
-            padding: 30px;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .image-item {
-            height: 200px;
-            border-radius: 15px;
-            overflow: hidden;
-            background-color: var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .image-item:hover {
-            transform: scale(1.05);
-        }
-
-        /* Maps Section */
-        .maps-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .map-box {
-            background-color: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .map-box h3 {
-            color: var(--purple);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .map-placeholder {
-            height: 300px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .map-placeholder i {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-
-        /* Payment Section */
-        .payment-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin-top: 30px;
-        }
-
-        .payment-info {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .payment-info h3 {
-            color: var(--green);
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .payment-methods {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .payment-method {
-            background-color: #f5f5f5;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-weight: bold;
-            color: var(--purple);
-        }
-
-        .upi-qr {
-            width: 200px;
-            height: 200px;
-            background-color: white;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border: 3px dashed var(--green);
-            padding: 20px;
-        }
-
-        .upi-qr-code {
-            font-size: 5rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .upi-id {
-            background-color: #f0f0f0;
-            padding: 10px 15px;
-            border-radius: 10px;
-            font-family: monospace;
-            margin-top: 10px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--purple);
-            color: white;
-            padding: 40px 0 20px;
-            margin-top: 50px;
-        }
-
-        .footer-logo {
-            height: 80px;
-            width: auto;
-            margin-bottom: 15px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            padding: 10px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-
-        .footer-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: var(--accent);
-        }
-
-        .footer-section p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            color: white;
-            font-size: 1.2rem;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            background-color: var(--accent);
-            color: #333;
-            transform: scale(1.1);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero-logo {
-                width: 400px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: var(--primary);
-                padding: 20px;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-            }
-            
-            nav.active {
-                display: block;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero-logo {
-                width: 320px;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .quick-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .link-btn {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo img {
-                height: 50px;
-            }
-
-            .hero-logo {
-                width: 260px;
-            }
-            
-            .video-grid, .image-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .payment-container {
-                padding: 25px;
-            }
-        }
-    </style>
+Parents and teachers can use SproutopiaLand videos to support early childhood education and preschool learning."> 
+
+<title>Sproutopia Land</title>
+
+<!-- Redirect after 6 seconds -->
+<meta http-equiv="refresh" content="6;url=https://sproutopialand.github.io/main.html">
+
+<style>
+
+body{
+margin:0;
+font-family:'Comic Sans MS', Arial, sans-serif;
+background:linear-gradient(180deg,#a8ecff,#ffffff);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+text-align:center;
+}
+
+/* Logo */
+.logo{
+width:180px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+/* Title */
+h1{
+color:#ff6f61;
+margin:10px;
+}
+
+/* Loading text */
+.loading{
+font-size:20px;
+color:#4CAF50;
+}
+
+/* Progress bar */
+
+.progress{
+width:260px;
+height:20px;
+background:#eee;
+border-radius:20px;
+overflow:hidden;
+margin-top:20px;
+}
+
+.progress-bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#ff6f61,#ffd93d,#6bcB77,#4d96ff,#ff6f61);
+animation:load 6s linear forwards;
+}
+
+@keyframes load{
+0%{width:0%;}
+100%{width:100%;}
+}
+
+/* Clouds */
+
+.cloud{
+position:absolute;
+font-size:40px;
+animation:cloudmove 25s linear infinite;
+}
+
+@keyframes cloudmove{
+0%{transform:translateX(-200px);}
+100%{transform:translateX(110vw);}
+}
+
+.cloud1{top:10%; animation-duration:25s;}
+.cloud2{top:25%; animation-duration:35s;}
+.cloud3{top:40%; animation-duration:30s;}
+
+/* Balloons */
+
+.balloon{
+position:absolute;
+bottom:-100px;
+font-size:35px;
+animation:balloon 10s linear infinite;
+}
+
+@keyframes balloon{
+0%{transform:translateY(0);}
+100%{transform:translateY(-120vh);}
+}
+
+.balloon1{left:15%;}
+.balloon2{left:40%; animation-delay:2s;}
+.balloon3{left:70%; animation-delay:4s;}
+
+/* Stars */
+
+.star{
+position:absolute;
+font-size:20px;
+animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:0.3;}
+to{opacity:1;}
+}
+
+.star1{top:20%; left:20%;}
+.star2{top:30%; left:80%;}
+.star3{top:60%; left:10%;}
+.star4{top:70%; left:90%;}
+
+</style>
 </head>
+
 <body>
-    <header>
-         <div class="container header-content">
-            <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Sproutopia Land</span>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="#home" class="active">🏠 Home</a></li>
-                    <li><a href="#videos">🎥 Videos</a></li>
-                    <li><a href="#news">📰 News</a></li>
-                    <li><a href="#gallery">🖼️ Gallery</a></li>
-                    <li><a href="#maps">🗺️ Maps</a></li>
-                    <li><a href="#payment">💳 Payment</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container">
-        <section id="home" class="hero">
-            <img src="SproutopiaLand.png" alt="SproutopiaLand - Where Little Minds Grow" class="hero-logo">
-            <p>Where little minds grow, play, and learn in a magical world of discovery! Join us on an exciting educational journey filled with fun activities, creative learning, and new friendships.</p>
-            
-            <div class="quick-links">
-                <a href="https://www.youtube.com/@SproutopiaLand" target="_blank" class="link-btn youtube-btn">
-                    <i class="fab fa-youtube"></i> Our YouTube Channel
-                </a>
-                <a href="https://wa.me/1234567890" target="_blank" class="link-btn whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                </a>
-                <a href="mailto:sproutopialand@gmail.com" class="link-btn mail-btn">
-                    <i class="fas fa-envelope"></i> Email Us
-                </a>
-                <a href="#payment" class="link-btn payment-btn">
-                    <i class="fas "></i> 💳 Online Payment
-                </a>
-            </div>
-        </section>
+<!-- Clouds -->
+<div class="cloud cloud1">☁️</div>
+<div class="cloud cloud2">☁️</div>
+<div class="cloud cloud3">☁️</div>
 
-        <section id="videos">
-            <h2 class="section-title">🎬 Video Gallery</h2>
-            <div class="video-gallery">
-                <div class="video-grid">
-                    <div class="video-item">
-                        <div class="video-thumbnail">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="video-info">
-                            <h3>Annual Day Celebration 2024</h3>
-                            <p>Our amazing kids performing on stage with colorful costumes and dances!</p>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-thumbnail">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="video-info">
-                            <h3>Science Fair Projects</h3>
-                            <p>Young scientists showcase their creative experiments and inventions.</p>
-                        </div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video-thumbnail">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="video-info">
-                            <h3>Sports Day Highlights</h3>
-                            <p>Fun races, games, and team activities that promote fitness and teamwork.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Balloons -->
+<div class="balloon balloon1">🎈</div>
+<div class="balloon balloon2">🎈</div>
+<div class="balloon balloon3">🎈</div>
 
-        <section id="news">
-            <h2 class="section-title">📢 School News & Updates</h2>
-            <div class="news-container">
-                <div class="news-item">
-                    <div class="news-date">
-                        <span class="day">15</span>
-                        <span>MAR</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Summer Camp Registration Open! 🏕️</h3>
-                        <p>Join our exciting 3-week summer camp with art, sports, and science activities. Limited seats available!</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-date">
-                        <span class="day">10</span>
-                        <span>MAR</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>Parent-Teacher Meeting 📅</h3>
-                        <p>Quarterly PTM scheduled for March 25th. Please book your time slot through the school app.</p>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <div class="news-date">
-                        <span class="day">05</span>
-                        <span>MAR</span>
-                    </div>
-                    <div class="news-content">
-                        <h3>New Playground Equipment 🎡</h3>
-                        <p>We've installed new safe and fun playground equipment for our little ones to enjoy!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Stars -->
+<div class="star star1">⭐</div>
+<div class="star star2">🌟</div>
+<div class="star star3">✨</div>
+<div class="star star4">⭐</div>
 
-        <section id="gallery">
-            <h2 class="section-title">📸 Image Gallery</h2>
-            <div class="image-gallery">
-                <div class="image-grid">
-                    <div class="image-item" style="background-color: #FF6B8B;">🎨</div>
-                    <div class="image-item" style="background-color: #4ECDC4;">🧪</div>
-                    <div class="image-item" style="background-color: #FFD166;">⚽</div>
-                    <div class="image-item" style="background-color: #06D6A0;">🎭</div>
-                    <div class="image-item" style="background-color: #9D4EDD;">📚</div>
-                    <div class="image-item" style="background-color: #FF9E6D;">🎵</div>
-                </div>
-            </div>
-        </section>
+<!-- Logo -->
+<img src="SproutopiaLand.png" class="logo" alt="SproutopiaLand Logo">
 
-        <section id="maps">
-            <h2 class="section-title">📍 Find Our Campus</h2>
-            <div class="maps-container">
-                <div class="map-box">
-                    <h3><i class="fab fa-google"></i> Google Maps</h3>
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>SproutopiaLand School Location</p>
-                        <p>123 Learning Street, Education City</p>
-                        <small>(Interactive map would appear here)</small>
-                    </div>
-                </div>
-                <div class="map-box">
-                    <h3><i class="fas fa-map-pin"></i> MapMyIndia</h3>
-                    <div class="map-placeholder">
-                        <i class="fas fa-location-dot"></i>
-                        <p>Detailed Indian Map View</p>
-                        <p>With local landmarks and directions</p>
-                        <small>(Interactive map would appear here)</small>
-                    </div>
-                </div>
-            </div>
-        </section>
+<h1>Welcome to Sproutopia Land 🌱</h1>
 
-        <section id="payment">
-            <h2 class="section-title">💳 Online Payment</h2>
-            <div class="payment-container">
-                <div class="payment-info">
-                    <h3>Easy & Secure Fee Payment</h3>
-                    <p>Pay school fees, activity charges, and other payments online through UPI. Quick, secure, and paperless!</p>
-                    
-                    <div class="payment-methods">
-                        <div class="payment-method">Google Pay</div>
-                        <div class="payment-method">PhonePe</div>
-                        <div class="payment-method">Paytm</div>
-                        <div class="payment-method">BHIM UPI</div>
-                    </div>
-                    
-                    <p style="margin-top: 20px;"><strong>Instructions:</strong> Scan the QR code or use the UPI ID below to make payment. Don't forget to mention your child's name and grade in the payment note.</p>
-                </div>
-                
-                <div class="upi-qr">
-                    <div class="upi-qr-code">
-                        <i class="fas fa-qrcode"></i>
-                    </div>
-                    <p>Scan to Pay</p>
-                    <div class="upi-id">sproutopialand@schoolbank</div>
-                </div>
-            </div>
-        </section>
-    </main>
+<div class="loading">Loading Kids Learning World...</div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                     <h3><i class="fas fa-seedling"></i>Sproutopia Land</h3>
-                    <p>Where every child's potential is nurtured with love, creativity, and innovation. Building the leaders of tomorrow, today!</p>
-                    <div class="social-links">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 98765 43210</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>sproutopialand@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Vivekpuram Shivpur, Varanasi City, PIN 221003</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon-Fri: 8:30 AM - 4:30 PM</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Important Links</h3>
-                    <p><a href="#home" style="color: var(--accent); text-decoration: none;">🏠 Home</a></p>
-                    <p><a href="#videos" style="color: var(--accent); text-decoration: none;">🎥 Video Gallery</a></p>
-                    <p><a href="#news" style="color: var(--accent); text-decoration: none;">📰 School News</a></p>
-                    <p><a href="#gallery" style="color: var(--accent); text-decoration: none;">🖼️ Photo Gallery</a></p>
-                    <p><a href="#payment" style="color: var(--accent); text-decoration: none;">💳 Fee Payment</a></p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>© 2024 Sproutopia Land Kids School. All rights reserved. | Designed with ❤️ for children</p>
-            </div>
-        </div>
-    </footer>
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                if(this.getAttribute('href') === '#') return;
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if(targetElement) {
-                    // Close mobile menu if open
-                    mainNav.classList.remove('active');
-                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Set active nav link on scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('nav a');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if(scrollY >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if(link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Fun hover effect for image gallery items
-        const imageItems = document.querySelectorAll('.image-item');
-        imageItems.forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                const emojis = ['🎨', '🧪', '⚽', '🎭', '📚', '🎵', '🎨', '🧸', '🚀', '🌈'];
-                const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-                this.textContent = randomEmoji;
-            });
-            
-            item.addEventListener('mouseleave', function() {
-                // Return to original emoji after a delay
-                setTimeout(() => {
-                    const originalEmoji = this.dataset.originalEmoji || '🖼️';
-                    this.textContent = originalEmoji;
-                }, 300);
-            });
-            
-            // Store original emoji
-            item.dataset.originalEmoji = item.textContent;
-        });
-    </script>
 </body>
 </html>
